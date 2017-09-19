@@ -1,7 +1,7 @@
-## dotfiles
-# My i3 dotfiles
+# dotfiles
+## My i3 dotfiles
 
-#Using:
+### Using:
 
 polybar
 https://github.com/jaagr/polybar
