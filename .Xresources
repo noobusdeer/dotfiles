@@ -1,0 +1,108 @@
+! XFT - Fuentes
+!----------------------------------------------------------------------
+
+Xft.dpi: 96
+Xft.antialias: 1
+Xft.rgba: rgb
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+
+Xcursor.theme:	 Neutral
+*font: -xos4-terminesspowerline-medium-r-normal--12-120-72-72-c-60-iso10646-1
+
+! URXVT
+!----------------------------------------------------------------------
+! Colores
+! bold, italic, underline
+! colors
+*.cursorColor:  #b3bdcb
+*.background: #404552
+*.foreground: #b3bdcb
+! Black + DarkGrey
+*.color0:  #404552
+*.color8:  #2a303b
+! DarkRed + Red
+*.color1:  #cc575d
+*.color9:  #a3464a
+! DarkGreen + Green
+*.color2:  #2679db
+*.color10: #75a9e8
+! DarkYellow + Yellow
+*.color3:  #b3bdcb
+*.color11: #CAD1DB
+! DarkBlue + Blue
+*.color4:  #5294e2
+*.color12: #97bfee
+! DarkMagenta + Magenta
+*.color5:  #404552
+*.color13: #686d79
+! DarkCyan + Cyan
+*.color6:  #b3bdcb
+*.color14: #383c4a
+! LightGrey + White
+*.color7:  #E1E5EA
+*.color15: #ffffff
+! for 256 color stuff
+*.color24:  #076678
+*.color66:  #427b58
+*.color88:  #9d0006
+*.color96:  #8f3f71
+*.color100: #79740e
+*.color108: #8ec07c
+*.color109: #83a598
+*.color130: #af3a03
+*.color136: #b57614
+*.color142: #b8bb26
+*.color167: #fb4934
+*.color175: #d3869b
+*.color208: #fe8019
+*.color214: #fabd2f
+*.color223: #ebdbb2
+*.color228: #f4e8ba
+*.color229: #fdf4c1
+*.color230: #ffffc8
+*.color234: #1d2021
+*.color235: #404552
+*.color236: #32302f
+*.color237: #3c3836
+*.color239: #504945
+*.color241: #665c54
+*.color243: #7c6f64
+*.color244: #928374
+*.color245: #928374
+*.color246: #a89984
+*.color248: #bdae93
+*.color250: #d5c4a1
+
+URxvt.letterSpace: -1
+URxvt*font: xft:inconsolata for Powerline:size=10
+URxvt*boldFont: xft:inconsolata for Powerline:size=10
+URxvt*italicFont: xft:inconsolata for Powerline:size=10
+URxvt*bolditalicFont: xft:inconsolata for Powerline:size=10
+
+! Varios
+URxvt.depth: 32
+URxvt*scrollBar: false
+URxvt.urgentOnBell: True
+URxvt.visualBell: False
+URxvt*saveLines: 1024
+URxvt*mouseWheelScrollPage: true
+! Extensions ~/.urxvt./ext
+URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select
+! Clipboard
+URxvt.keysym.C-S-C: perl:clipboard:copy
+URxvt.keysym.C-S-V: perl:clipboard:paste
+URxvt.keysym.C-S-W: perl:clipboard:paste_escaped
+URxvt.clipboard.copycmd:  xsel -ib
+URxvt.clipboard.pastecmd: xsel -ob
+! Keyboard-select
+URxvt.keysym.C-Escape: perl:keyboard-select:activate
+URxvt.keysym.C-S-S: perl:keyboard-select:search
+! Url-select
+URxvt.keysym.C-S-U: perl:url-select:select_next
+URxvt.url-select.autocopy: true
+URxvt.url-select.button: 1
+URxvt.url-select.launcher: /usr/bin/firefox
+URxvt.url-select.underline: true

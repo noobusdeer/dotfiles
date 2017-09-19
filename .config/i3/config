@@ -1,0 +1,184 @@
+# i3 config file
+
+#.......
+# Font
+#.......
+
+set $ft pango:Inconsolata:size=8
+font pango:Inconsolata 10
+force_focus_wrapping yes
+focus_follows_mouse  no
+#..........
+
+# Look
+#..........
+
+new_window pixel 2
+new_float pixel 2
+
+# Hybrid colors
+set $back               #404552
+set $blue               #5294e2
+set $black              #282A2E
+set $grey               #373B41
+set $lightgrey          #707880
+set $white              #C5C8C6
+set $yellow             #F0C674
+set $red                #CC6666
+set $darkred            #A54242
+set $green              #B5BD56
+
+#class                  border      backgr.     text        split
+client.focused          $green      $blue       $black      $blue
+client.focused_inactive $grey       $grey       $lightgrey  $grey
+client.unfocused        $grey       $grey       $lightgrey  $grey
+client.urgent           $red        $red        $black      $red
+client.background       $back
+
+#..........
+# Applications
+#..........
+
+# Using bindcode for compatibility
+
+# Principal mod key (Super = Win key)
+# mod1 = Alt (xmodmap to show)
+# mod4 = Winkey (xmodmap to show)
+set $mod Mod4
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# Terminal (mod+Enter)
+bindcode $mod+36 exec urxvt
+# start dmenu (mod+x)
+bindcode $mod+53 exec dmenu_run -fn "$ft" -nb "$back" -nf "$white" -sb "$blue" -sf "$black"
+
+# My shortcuts
+bindsym $mod+Shift+t exec telegram-desktop
+bindsym $mod+Shift+v exec vivaldi
+bindsym $mod+Shift+a exec atom
+bindsym $mod+Shift+s exec skypeforlinux
+bindsym $mod+Shift+f exec thunar
+
+
+#...........
+# Keybinds i3
+#...........
+
+# kill focused window (mod+q)
+bindcode $mod+24 kill
+
+# Cursor key for focus
+bindcode $mod+113 focus left
+bindcode $mod+116 focus down
+bindcode $mod+111 focus up
+bindcode $mod+114 focus right
+
+# Shitf+cursor for move windows
+bindcode $mod+Shift+113 move left
+bindcode $mod+Shift+116 move down
+bindcode $mod+Shift+111 move up
+bindcode $mod+Shift+114 move right
+
+# split in horizontal orientation (mod+h)
+bindcode $mod+43 split h
+bindcode $mod+Mod1+113 split h
+bindcode $mod+Mod1+114 split h
+
+# split in vertical orientation (mod+v)
+bindcode $mod+55 split v
+bindcode $mod+Mod1+116 split v
+bindcode $mod+Mod1+111 split v
+
+# enter fullscreen mode for the focused container (mod+f)
+bindcode $mod+41 fullscreen
+
+# change container layout (stacked (mod+s), tabbed (mod+t), default(mod+e))
+bindcode $mod+39 layout stacking
+bindcode $mod+28 layout tabbed
+bindcode $mod+40 layout default
+bindcode $mod+25 layout toggle split
+
+# toggle tiling / floating (mod+shitf+space)
+bindcode $mod+Shift+65 floating toggle
+bindcode $mod+Mod1+65 floating toggle
+
+# change focus between tiling / floating windows (mod+space)
+bindcode $mod+65 focus mode_toggle
+
+# focus the parent container (mod+a)
+bindcode $mod+38 focus parent
+
+# focus the child container (mod+z)
+bindcode $mod+52 focus child
+
+# switch to workspace
+bindcode $mod+10 workspace 1:α
+bindcode $mod+11 workspace 2:β
+bindcode $mod+12 workspace 3:γ
+bindcode $mod+13 workspace 4:δ
+bindcode $mod+14 workspace 5:ε
+bindcode $mod+15 workspace 6:ζ
+bindcode $mod+16 workspace 7:η
+bindcode $mod+17 workspace 8:θ
+bindcode $mod+18 workspace 9:ι
+bindcode $mod+19 workspace 10:κ
+
+# move focused container to workspace
+bindcode $mod+Shift+10 move container to workspace 1:α
+bindcode $mod+Shift+11 move container to workspace 2:β
+bindcode $mod+Shift+12 move container to workspace 3:γ
+bindcode $mod+Shift+13 move container to workspace 4:δ
+bindcode $mod+Shift+14 move container to workspace 5:ε
+bindcode $mod+Shift+15 move container to workspace 6:ζ
+bindcode $mod+Shift+16 move container to workspace 7:η
+bindcode $mod+Shift+17 move container to workspace 8:θ
+bindcode $mod+Shift+18 move container to workspace 9:ι
+bindcode $mod+Shift+19 move container to workspace 10:κ
+
+# reload the configuration file (mod+shitf+c)
+bindcode $mod+Shift+54 reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3) (mod+shitf+r)
+bindcode $mod+Shift+27 restart
+# exit i3 (logs you out of your X session) (mod+shitf+e)
+#bindcode $mod+Shift+26 exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindcode $mod+Shift+35 move scratchpad
+bindcode $mod+35 scratchpad show
+# resize window (you can also use the mouse for that) (mod+r)
+mode "resize" {
+  # These bindings trigger as soon as you enter the resize mode
+
+  # Pressing left will shrink the window’s width.
+  # Pressing right will grow the window’s width.
+  # Pressing up will shrink the window’s height.
+  # Pressing down will grow the window’s height.
+  bindcode 44 resize shrink width 10 px or 10 ppt
+  bindcode 45 resize grow height 10 px or 10 ppt
+  bindcode 46 resize shrink height 10 px or 10 ppt
+  bindcode 47 resize grow width 10 px or 10 ppt
+
+  # same bindings, but for the arrow keys
+  bindcode 113 resize shrink width 1 px or 1 ppt
+  bindcode 116 resize grow height 1 px or 1 ppt
+  bindcode 111 resize shrink height 1 px or 1 ppt
+  bindcode 114 resize grow width 1 px or 1 ppt
+
+  # back to normal: Enter or Escape
+  bindcode 36 mode "default"
+  bindcode 9 mode "default"
+}
+bindcode $mod+27 mode "resize"
+
+bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master '3%+'"
+bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master '1%-'"
+bindsym XF86AudioMute exec "amixer -D pulse set Master toggle"
+bindsym XF86AudioMicMute exec "amixer -D pulse sset Capture toggle"
+bindsym XF86MonBrightnessUp exec "light -A 5"
+bindsym XF86MonBrightnessDown exec "light -U 5"
+
+exec_always --no-startup-id autocutsel -s CLIPBOARD
+exec_always --no-startup-id autocutsel -s PRIMARY
+# My bar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id nm-applet
