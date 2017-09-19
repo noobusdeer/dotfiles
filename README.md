@@ -2,8 +2,8 @@
 
 ## Using:
 
-###polybar
+### polybar
 https://github.com/jaagr/polybar
 
-###fontawesome
+### fontawesome
 sudo apt-get install fonts-font-awesome
