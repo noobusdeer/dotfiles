@@ -1,10 +1,9 @@
-# dotfiles
-## My i3 dotfiles
+# My i3 dotfiles
 
-### Using:
+## Using:
 
-polybar
+###polybar
 https://github.com/jaagr/polybar
 
-fontawesome
+###fontawesome
 sudo apt-get install fonts-font-awesome
