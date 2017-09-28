@@ -4,7 +4,7 @@
 # Font
 #.......
 
-set $ft pango:Inconsolata:size=9
+set $ft pango:Inconsolata:size=11
 font pango:Inconsolata 10
 force_focus_wrapping yes
 focus_follows_mouse  no
