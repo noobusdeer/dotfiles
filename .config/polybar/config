@@ -28,9 +28,9 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = terminesspowerline:pixelsize=9;1
-font-1 = fontawesome:fontformat=truetype:size=8:antialias=false;0
-#font-2 = siji:powerlinesymbols=8;1
+font-0 = treminesspowerline:pixelsize=9;1
+font-1 = fontawesome:fontformat=truetype:size=8:antialias=true;0
+;font-2 = siji:powerlinesymbols=8;1
 
 modules-left = i3
 modules-center = xwindow
@@ -85,34 +85,48 @@ label-empty-padding = 2
 
 [module/i3]
 type = internal/i3
+
 format = <label-state> <label-mode>
+
+fuzzy-match = true
 index-sort = true
 wrapping-scroll = false
 strip-wsnumbers = true
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-default = 
 
+
+label-mode = %mode%
 label-mode-padding = 2
 label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
+;label-mode-padding = 2
+;label-mode-foreground = #000
+;label-mode-background = ${colors.primary}
+
 ; focused = Active workspace on focused monitor
-label-focused = %name%
+label-focused = %icon%
 label-focused-background = ${module/bspwm.label-focused-background}
 label-focused-underline = ${module/bspwm.label-focused-underline}
 label-focused-padding = ${module/bspwm.label-focused-padding}
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = %name%
+label-unfocused = %icon%
 label-unfocused-padding = ${module/bspwm.label-occupied-padding}
 
 ; visible = Active workspace on unfocused monitor
-label-visible = %nameR%
+label-visible = %icon%
 label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %name%
+label-urgent = %index%
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
