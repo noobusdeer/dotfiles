@@ -4,7 +4,7 @@
 # Font
 #.......
 
-set $ft pango:Inconsolata:size=8
+set $ft pango:Inconsolata:size=9
 font pango:Inconsolata 10
 force_focus_wrapping yes
 focus_follows_mouse  no
@@ -56,11 +56,11 @@ bindcode $mod+53 exec dmenu_run -fn "$ft" -nb "$back" -nf "$white" -sb "$blue" -
 
 # My shortcuts
 bindsym $mod+Shift+t exec telegram-desktop
-bindsym $mod+Shift+v exec vivaldi
-bindsym $mod+Shift+a exec atom
+bindsym $mod+Shift+v exec vivaldi-stable
+bindsym $mod+Shift+a exec atom-beta
 bindsym $mod+Shift+s exec skypeforlinux
 bindsym $mod+Shift+f exec thunar
-
+bindsym $mod+l exec /home/noobusdeer/.lock.sh
 
 #...........
 # Keybinds i3
@@ -114,28 +114,28 @@ bindcode $mod+38 focus parent
 bindcode $mod+52 focus child
 
 # switch to workspace
-bindcode $mod+10 workspace 1:α
-bindcode $mod+11 workspace 2:β
-bindcode $mod+12 workspace 3:γ
-bindcode $mod+13 workspace 4:δ
-bindcode $mod+14 workspace 5:ε
-bindcode $mod+15 workspace 6:ζ
-bindcode $mod+16 workspace 7:η
-bindcode $mod+17 workspace 8:θ
-bindcode $mod+18 workspace 9:ι
-bindcode $mod+19 workspace 10:κ
+bindcode $mod+10 workspace 1:1
+bindcode $mod+11 workspace 2:2
+bindcode $mod+12 workspace 3:3
+bindcode $mod+13 workspace 4:4
+bindcode $mod+14 workspace 5:5
+bindcode $mod+15 workspace 6:6
+bindcode $mod+16 workspace 7:7
+bindcode $mod+17 workspace 8:8
+bindcode $mod+18 workspace 9:9
+bindcode $mod+19 workspace 10:10
 
 # move focused container to workspace
-bindcode $mod+Shift+10 move container to workspace 1:α
-bindcode $mod+Shift+11 move container to workspace 2:β
-bindcode $mod+Shift+12 move container to workspace 3:γ
-bindcode $mod+Shift+13 move container to workspace 4:δ
-bindcode $mod+Shift+14 move container to workspace 5:ε
-bindcode $mod+Shift+15 move container to workspace 6:ζ
-bindcode $mod+Shift+16 move container to workspace 7:η
-bindcode $mod+Shift+17 move container to workspace 8:θ
-bindcode $mod+Shift+18 move container to workspace 9:ι
-bindcode $mod+Shift+19 move container to workspace 10:κ
+bindcode $mod+Shift+10 move container to workspace 1:1
+bindcode $mod+Shift+11 move container to workspace 2:2
+bindcode $mod+Shift+12 move container to workspace 3:3
+bindcode $mod+Shift+13 move container to workspace 4:4
+bindcode $mod+Shift+14 move container to workspace 5:5
+bindcode $mod+Shift+15 move container to workspace 6:6
+bindcode $mod+Shift+16 move container to workspace 7:7
+bindcode $mod+Shift+17 move container to workspace 8:8
+bindcode $mod+Shift+18 move container to workspace 9:9
+bindcode $mod+Shift+19 move container to workspace 10:10
 
 # reload the configuration file (mod+shitf+c)
 bindcode $mod+Shift+54 reload
@@ -177,8 +177,9 @@ bindsym XF86AudioMicMute exec "amixer -D pulse sset Capture toggle"
 bindsym XF86MonBrightnessUp exec "light -A 5"
 bindsym XF86MonBrightnessDown exec "light -U 5"
 
-exec_always --no-startup-id autocutsel -s CLIPBOARD
-exec_always --no-startup-id autocutsel -s PRIMARY
 # My bar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id nm-applet
+
+# My soft autostart
+#exec_always --no-startup-id nm-applet
+exec_always --no-startup-id feh --bg-scale /home/noobusdeer/Pictures/wall.jpg

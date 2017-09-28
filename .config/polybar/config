@@ -28,9 +28,9 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = terminesspowerline:pixelsize=8;1
-font-1 = fontawesome:fontformat=truetype:size=7:antialias=false;0
-font-2 = siji:pixelsize=8;1
+font-0 = terminesspowerline:pixelsize=9;1
+font-1 = fontawesome:fontformat=truetype:size=8:antialias=false;0
+#font-2 = siji:powerlinesymbols=8;1
 
 modules-left = i3
 modules-center = xwindow
