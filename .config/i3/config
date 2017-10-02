@@ -184,3 +184,4 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #exec_always --no-startup-id nm-applet
 exec_always --no-startup-id feh --bg-scale /home/noobusdeer/Pictures/wall.jpg
 exec_always --no-startup-id compton -d
+exec_always  --no-startup-id nm-applet

@@ -1,53 +1,27 @@
 setxkbmap "us,ru" ",winkeys" "grp:alt_shift_toggle,grp_led:scroll"
-xset b off
-# Carga recursos
+
 [[ -f $HOME/.Xresources ]] && xrdb -I$HOME -merge $HOME/.Xresources
-#$HOME/bin/loadresources
 
-# Velocidad y puntero del ratón
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
+
 xset m 3
-
-# Sonido del pitido
 xset b 15 200 150
-
-# Protector de pantalla a 60 minutos
 xset s off
 xset dpms 3600 3600 3600
 
-# Mis fuentes
 xset fp+ $HOME/.local/share/fonts/misc
 xset fp+ $HOME/.local/share/fonts/ohsnap
 xset fp+ $HOME/.local/share/fonts/terminesspowerline
 xset fp+ $HOME/.local/share/fonts/tewi
 fc-cache -v
-# TTF se cargan automaticamente en .fonts
 
-# Mis teclas
-#xmodmap $HOME/.Xmodmap
+export QT_STYLE_OVERRIDE=gtk
+export _JAVA_OPTIONS="‐Dawt.useSystemAAFontSettings=on ‐Dswin.aatext=true ‐Dswing.defaultaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
 
-# Gestor de ficheros
-#exec rox -p default &
-
-# Correo
-#exec fetchmail &
-#exec xmailbox -geometry 16x16+915+9&
-
-# Fondo
-#[[ -f $HOME/.fehbg ]] && sh $HOME/.fehbg
-
-# Programas para el i3
-#exec conky -c ~/.i3/conkyrc &
-#exec nm-applet &
-
-# Notificador
-# Paquete notification-daemon
-# Probar con notify-send (paquete libnotify-bim)
-exec /usr/lib/notification-daemon/notification-daemon &
-
-# Remapear los botones del ratón extendido
-# Paquete xinput
-# "xinput list" -> muestra los dispositivos
-# Cambia el Wheel Left (6) por el Middle click (2)
 xinput set-button-map 10 1 2 3 4 5 2 7 8 9
+
+devmon &
+redshift &
 
 exec i3
