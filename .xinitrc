@@ -10,13 +10,6 @@ xset b 15 200 150
 xset s off
 xset dpms 3600 3600 3600
 
-xset fp+ $HOME/.local/share/fonts/misc
-xset fp+ $HOME/.local/share/fonts/ohsnap
-xset fp+ $HOME/.local/share/fonts/terminesspowerline
-xset fp+ $HOME/.local/share/fonts/tewi
-xset +fp /usr/share/fonts/cyrillic
-fc-cache -v
-
 export QT_STYLE_OVERRIDE=gtk
 export _JAVA_OPTIONS="‐Dawt.useSystemAAFontSettings=on ‐Dswin.aatext=true ‐Dswing.defaultaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
 

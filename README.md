@@ -5,5 +5,7 @@
 ### polybar
 https://github.com/jaagr/polybar
 
-### fontawesome
+### fonts
+https://github.com/powerline/fonts
+
 sudo apt-get install fonts-font-awesome
