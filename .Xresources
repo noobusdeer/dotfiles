@@ -75,11 +75,11 @@ Xcursor.theme:	 Neutral
 *.color248: #bdae93
 *.color250: #d5c4a1
 
-URxvt.letterSpace: 0
-URxvt*font: xft:inconsolata for Powerline:size=10
-URxvt*boldFont: xft:inconsolata for Powerline:size=10
-URxvt*italicFont: xft:inconsolata for Powerline:size=10
-URxvt*bolditalicFont: xft:inconsolata for Powerline:size=10
+URxvt.letterSpace: -1
+URxvt*font: xft:DejaVu Sans Mono for Powerline:size=9
+URxvt*boldFont: xft:DejaVu Sans Mono for Powerline:size=9
+URxvt*italicFont: xft:DejaVu Sans Mono for Powerline:size=9
+URxvt*bolditalicFont: xft:DejaVu Sans Mono for Powerline:size=9
 
 ! Varios
 URxvt.depth: 32

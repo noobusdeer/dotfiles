@@ -28,7 +28,7 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = treminesspowerline:pixelsize=9;1
+font-0 = DejaVu Sans Mono for Powerline:fontformat=truetype:pixelsize=9;1
 font-1 = fontawesome:fontformat=truetype:size=8:antialias=true;0
 ;font-2 = siji:powerlinesymbols=8;1
 

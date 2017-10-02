@@ -4,8 +4,8 @@
 # Font
 #.......
 
-set $ft pango:Inconsolata:size=11
-font pango:Inconsolata 10
+set $ft pango:DejaVu Sans Mono for Powerline:size=9
+font pango:DejaVu Sans Mono for Powerline 9
 force_focus_wrapping yes
 focus_follows_mouse  no
 #..........

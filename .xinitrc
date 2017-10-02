@@ -14,6 +14,7 @@ xset fp+ $HOME/.local/share/fonts/misc
 xset fp+ $HOME/.local/share/fonts/ohsnap
 xset fp+ $HOME/.local/share/fonts/terminesspowerline
 xset fp+ $HOME/.local/share/fonts/tewi
+xset +fp /usr/share/fonts/cyrillic
 fc-cache -v
 
 export QT_STYLE_OVERRIDE=gtk
