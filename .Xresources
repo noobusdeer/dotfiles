@@ -39,7 +39,7 @@ Xcursor.theme:	 Neutral
 *.color13: #686d79
 ! DarkCyan + Cyan
 *.color6:  #b3bdcb
-*.color14: #383c4a
+*.color14: #8696ac
 ! LightGrey + White
 *.color7:  #E1E5EA
 *.color15: #ffffff
