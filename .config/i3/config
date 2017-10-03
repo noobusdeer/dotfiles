@@ -142,7 +142,7 @@ bindcode $mod+Shift+54 reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3) (mod+shitf+r)
 bindcode $mod+Shift+27 restart
 # exit i3 (logs you out of your X session) (mod+shitf+e)
-#bindcode $mod+Shift+26 exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindcode $mod+Shift+26 exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 bindcode $mod+Shift+35 move scratchpad
 bindcode $mod+35 scratchpad show
 # resize window (you can also use the mouse for that) (mod+r)
@@ -181,7 +181,19 @@ bindsym XF86MonBrightnessDown exec "light -U 5"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # My soft autostart
-#exec_always --no-startup-id nm-applet
 exec_always --no-startup-id feh --bg-scale /home/noobusdeer/Pictures/wall.jpg
 exec_always --no-startup-id compton -d
-exec_always  --no-startup-id nm-applet
+exec_always --no-startup-id nm-applet
+exec_always --no-startup-id eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+exec_always --no-startup-id xrdb -I$HOME -merge $HOME/.Xresources
+exec_always --no-startup-id export SSH_AUTH_SOCK
+exec_always --no-startup-id setxkbmap "us,ru" ",winkeys" "grp:alt_shift_toggle,grp_led:scroll"
+exec_always --no-startup-id xset m 3
+exec_always --no-startup-id xset b 15 200 150
+exec_always --no-startup-id xset s off
+exec_always --no-startup-id xset dpms 3600 3600 3600
+exec_always --no-startup-id export QT_STYLE_OVERRIDE=gtk
+exec_always --no-startup-id export _JAVA_OPTIONS="‐Dawt.useSystemAAFontSettings=on ‐Dswin.aatext=true ‐Dswing.defaultaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
+exec_always --no-startup-id xinput set-button-map 10 1 2 3 4 5 2 7 8 9
+exec_always --no-startup-id devmon
+exec_always --no-startup-id redshift

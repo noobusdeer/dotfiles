@@ -81,5 +81,4 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias unity3d="/opt/Unity/Editor/Unity"
-alias ue4="/home/noobusdeer/soft/UnrealEngine/Engine/Binaries/Linux/UE4Editor -opengl"
+alias ue4="/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor -opengl"
