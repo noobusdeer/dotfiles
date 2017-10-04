@@ -196,4 +196,4 @@ exec_always --no-startup-id export QT_STYLE_OVERRIDE=gtk
 exec_always --no-startup-id export _JAVA_OPTIONS="‐Dawt.useSystemAAFontSettings=on ‐Dswin.aatext=true ‐Dswing.defaultaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
 exec_always --no-startup-id xinput set-button-map 10 1 2 3 4 5 2 7 8 9
 exec_always --no-startup-id devmon
-exec_always --no-startup-id redshift
+#exec_always --no-startup-id redshift
