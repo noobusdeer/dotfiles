@@ -61,6 +61,7 @@ bindsym $mod+Shift+a exec atom-beta
 bindsym $mod+Shift+s exec skypeforlinux
 bindsym $mod+Shift+f exec thunar
 bindsym $mod+l exec /home/noobusdeer/.lock.sh
+bindsym $mod+Shift+c exec corebird
 
 #...........
 # Keybinds i3
@@ -138,7 +139,7 @@ bindcode $mod+Shift+18 move container to workspace 9:9
 bindcode $mod+Shift+19 move container to workspace 10:10
 
 # reload the configuration file (mod+shitf+c)
-bindcode $mod+Shift+54 reload
+#bindcode $mod+Shift+54 reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3) (mod+shitf+r)
 bindcode $mod+Shift+27 restart
 # exit i3 (logs you out of your X session) (mod+shitf+e)
@@ -196,4 +197,6 @@ exec_always --no-startup-id export QT_STYLE_OVERRIDE=gtk
 exec_always --no-startup-id export _JAVA_OPTIONS="‐Dawt.useSystemAAFontSettings=on ‐Dswin.aatext=true ‐Dswing.defaultaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
 exec_always --no-startup-id xinput set-button-map 10 1 2 3 4 5 2 7 8 9
 exec_always --no-startup-id devmon
-#exec_always --no-startup-id redshift
+exec_always --no-startup-id twmnd
+exec_always --no-startup-id dropbox 
+#exec_always --no-startup-id redshift redshift -l 55.75:37.61
