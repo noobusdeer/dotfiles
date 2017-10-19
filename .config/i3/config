@@ -62,6 +62,7 @@ bindsym $mod+Shift+s exec skypeforlinux
 bindsym $mod+Shift+f exec thunar
 bindsym $mod+l exec /home/noobusdeer/.lock.sh
 bindsym $mod+Shift+c exec corebird
+bindsym $mod+Shift+b exec beakerbrowser
 
 #...........
 # Keybinds i3
@@ -199,4 +200,4 @@ exec_always --no-startup-id xinput set-button-map 10 1 2 3 4 5 2 7 8 9
 exec_always --no-startup-id devmon
 exec_always --no-startup-id twmnd
 exec_always --no-startup-id dropbox 
-#exec_always --no-startup-id redshift redshift -l 55.75:37.61
+exec_always --no-startup-id redshift redshift -l 55.75:37.61
