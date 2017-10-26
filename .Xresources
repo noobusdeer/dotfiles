@@ -35,7 +35,7 @@ Xcursor.theme:	 Neutral
 *.color4:  #5294e2
 *.color12: #97bfee
 ! DarkMagenta + Magenta
-*.color5:  #404552
+*.color5:  #CC5798
 *.color13: #686d79
 ! DarkCyan + Cyan
 *.color6:  #b3bdcb

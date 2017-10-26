@@ -50,7 +50,7 @@ set $mod Mod4
 floating_modifier $mod
 
 # Terminal (mod+Enter)
-bindcode $mod+36 exec urxvt
+bindcode $mod+36 exec urxvt -e bash -c "tmux -u"
 # start dmenu (mod+x)
 bindcode $mod+53 exec dmenu_run -fn "$ft" -nb "$back" -nf "$white" -sb "$blue" -sf "$black"
 
