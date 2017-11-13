@@ -81,4 +81,5 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+alias q="tmux kill-session"
 alias ue4="/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor -opengl"
