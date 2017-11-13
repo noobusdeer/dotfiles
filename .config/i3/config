@@ -56,13 +56,12 @@ bindcode $mod+53 exec dmenu_run -fn "$ft" -nb "$back" -nf "$white" -sb "$blue" -
 
 # My shortcuts
 bindsym $mod+Shift+t exec telegram-desktop
-bindsym $mod+Shift+v exec vivaldi-stable
+bindsym $mod+Shift+b exec luakit
 bindsym $mod+Shift+a exec atom-beta
 bindsym $mod+Shift+s exec skypeforlinux
 bindsym $mod+Shift+f exec thunar
-bindsym $mod+l exec /home/noobusdeer/.lock.sh
+bindsym $mod+Shift+v exec /home/noobusdeer/.lock.sh
 bindsym $mod+Shift+c exec corebird
-bindsym $mod+Shift+b exec beakerbrowser
 
 #...........
 # Keybinds i3
@@ -72,19 +71,19 @@ bindsym $mod+Shift+b exec beakerbrowser
 bindcode $mod+24 kill
 
 # Cursor key for focus
-bindcode $mod+113 focus left
-bindcode $mod+116 focus down
-bindcode $mod+111 focus up
-bindcode $mod+114 focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # Shitf+cursor for move windows
-bindcode $mod+Shift+113 move left
-bindcode $mod+Shift+116 move down
-bindcode $mod+Shift+111 move up
-bindcode $mod+Shift+114 move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # split in horizontal orientation (mod+h)
-bindcode $mod+43 split h
+bindsym $mod+y split h
 bindcode $mod+Mod1+113 split h
 bindcode $mod+Mod1+114 split h
 
