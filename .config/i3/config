@@ -62,6 +62,7 @@ bindsym $mod+Shift+s exec skypeforlinux
 bindsym $mod+Shift+f exec thunar
 bindsym $mod+Shift+v exec /home/noobusdeer/.lock.sh
 bindsym $mod+Shift+c exec corebird
+bindsym $mod+p exec passmenu -fn "$ft" -nb "$back" -nf "$white" -sb "$blue" -sf "$black"
 
 #...........
 # Keybinds i3
