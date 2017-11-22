@@ -56,7 +56,7 @@ bindcode $mod+53 exec dmenu_run -fn "$ft" -nb "$back" -nf "$white" -sb "$blue" -
 
 # My shortcuts
 bindsym $mod+Shift+t exec telegram-desktop
-bindsym $mod+Shift+b exec luakit
+bindsym $mod+Shift+b exec firefox-nightly
 bindsym $mod+Shift+a exec atom-beta
 bindsym $mod+Shift+s exec skypeforlinux
 bindsym $mod+Shift+f exec thunar

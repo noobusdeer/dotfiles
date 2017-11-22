@@ -7,7 +7,7 @@ set foldlevel=1
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set noexpandtab
+set expandtab
 syntax on
 colorscheme solarized
 set background=dark
@@ -34,8 +34,8 @@ autocmd VimEnter *
 	\ | wincmd w
 	\ | endif
 nmap <silent> <C-E> :NERDTreeToggle<CR>
-let NERDTreeShoHidden=1
-nmap <silent> <C-N> :NERDTreeTabsToggle<CR>
+let NERDTreeShowHidden=1
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 xmap ga <Plug>(EasyAllign)
 nmap ga <Plug>(EasyAllign)
 let g:indentLine_char = '|'
