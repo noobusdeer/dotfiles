@@ -9,7 +9,7 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 syntax on
-colorscheme solarized
+colorscheme hemisu
 set background=dark
 let g:solirized_tempcolors=256
 set nocompatible " be iMproved, required
