@@ -82,4 +82,5 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias q="tmux kill-session"
+alias vim="nvim"
 alias ue4="/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor -opengl"
