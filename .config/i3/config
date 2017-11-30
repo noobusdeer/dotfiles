@@ -17,8 +17,8 @@ new_window pixel 2
 new_float pixel 2
 
 # Hybrid colors
-set $back               #404552
-set $blue               #5294e2
+set $back               #000000
+set $blue               #C3C3C3
 set $black              #282A2E
 set $grey               #373B41
 set $lightgrey          #707880

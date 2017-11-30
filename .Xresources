@@ -18,10 +18,10 @@ URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=14
 ! bold, italic, underline
 ! colors
 *.cursorColor:  #b3bdcb
-*.background: #404552
+*.background: #000000
 *.foreground: #b3bdcb
 ! Black + DarkGrey
-*.color0:  #404552
+*.color0:  #000000
 *.color8:  #2a303b
 ! DarkRed + Red
 *.color1:  #cc575d
