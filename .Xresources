@@ -12,73 +12,70 @@ Xft.hintstyle: hintfull
 Xcursor.theme:	 Neutral
 URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=14
 
-URxvt*transparent: true
-URxvt*shading: 30
-
 !*font: -xos4-terminesspowerline-medium-r-normal--12-120-72-72-c-60-iso10646-1
 ! URXVT
 !----------------------------------------------------------------------
 ! Colores
 ! bold, italic, underline
 ! colors
-*.cursorColor:  #b3bdcb
-*.background: #000000
-*.foreground: #b3bdcb
+URxvt.cursorColor:  #b3bdcb
+URxvt.background: #000000
+URxvt.foreground: #b3bdcb
 ! Black + DarkGrey
-*.color0:  #000000
-*.color8:  #2a303b
+URxvt.color0:  #000000
+URxvt.color8:  #2a303b
 ! DarkRed + Red
-*.color1:  #cc575d
-*.color9:  #a3464a
+URxvt.color1:  #cc575d
+URxvt.color9:  #a3464a
 ! DarkGreen + Green
-*.color2:  #2679db
-*.color10: #75a9e8
+URxvt.color2:  #2679db
+URxvt.color10: #75a9e8
 ! DarkYellow + Yellow
-*.color3:  #b3bdcb
-*.color11: #CAD1DB
+URxvt.color3:  #b3bdcb
+.color11: #CAD1DB
 ! DarkBlue + Blue
-*.color4:  #5294e2
-*.color12: #97bfee
+URxvt.color4:  #5294e2
+URxvt.color12: #97bfee
 ! DarkMagenta + Magenta
-*.color5:  #CC5798
-*.color13: #686d79
+URxvt.color5:  #CC5798
+URxvt.color13: #686d79
 ! DarkCyan + Cyan
-*.color6:  #b3bdcb
-*.color14: #8696ac
+URxvt.color6:  #b3bdcb
+URxvt.color14: #8696ac
 ! LightGrey + White
-*.color7:  #E1E5EA
-*.color15: #ffffff
+URxvt.color7:  #E1E5EA
+URxvt.color15: #ffffff
 ! for 256 color stuff
-*.color24:  #076678
-*.color66:  #427b58
-*.color88:  #9d0006
-*.color96:  #8f3f71
-*.color100: #79740e
-*.color108: #8ec07c
-*.color109: #83a598
-*.color130: #af3a03
-*.color136: #b57614
-*.color142: #b8bb26
-*.color167: #fb4934
-*.color175: #d3869b
-*.color208: #fe8019
-*.color214: #fabd2f
-*.color223: #ebdbb2
-*.color228: #f4e8ba
-*.color229: #fdf4c1
-*.color230: #ffffc8
-*.color234: #1d2021
-*.color235: #404552
-*.color236: #32302f
-*.color237: #3c3836
-*.color239: #504945
-*.color241: #665c54
-*.color243: #7c6f64
-*.color244: #928374
-*.color245: #928374
-*.color246: #a89984
-*.color248: #bdae93
-*.color250: #d5c4a1
+URxvt.color24:  #076678
+URxvt.color66:  #427b58
+URxvt.color88:  #9d0006
+URxvt.color96:  #8f3f71
+URxvt.color100: #79740e
+URxvt.color108: #8ec07c
+URxvt.color109: #83a598
+URxvt.color130: #af3a03
+URxvt.color136: #b57614
+URxvt.color142: #b8bb26
+URxvt.color167: #fb4934
+URxvt.color175: #d3869b
+URxvt.color208: #fe8019
+URxvt.color214: #fabd2f
+URxvt.color223: #ebdbb2
+URxvt.color228: #f4e8ba
+URxvt.color229: #fdf4c1
+URxvt.color230: #ffffc8
+URxvt.color234: #1d2021
+URxvt.color235: #404552
+URxvt.color236: #32302f
+URxvt.color237: #3c3836
+URxvt.color239: #504945
+URxvt.color241: #665c54
+URxvt.color243: #7c6f64
+URxvt.color244: #928374
+URxvt.color245: #928374
+URxvt.color246: #a89984
+URxvt.color248: #bdae93
+URxvt.color250: #d5c4a1
 
 URxvt.letterSpace: -1
 URxvt*font: xft:DejaVu Sans Mono for Powerline:size=9
@@ -110,3 +107,16 @@ URxvt.url-select.autocopy: true
 URxvt.url-select.button: 1
 URxvt.url-select.launcher: /usr/bin/firefox
 URxvt.url-select.underline: true
+
+rofi.lines: 6
+rofi.width: -80
+rofi.separator-style: solid
+rofi.hide-scrollbar: true
+rofi.font: DejaVu Sans Mono for Powerline 10
+rofi.matching: fuzzy
+rofi.display-drun: !
+rofi.color-enabled: true
+rofi.color-window: #000000, #b3bdcb, #b3bdcb
+rofi.color-normal: #000000, #b3bdcb, #000000, #202020, #b3bdcb
+rofi.color-active: #000000, #adaeaf, #232323, #545455, #ffffff
+rofi.color-urgent: #000000, #ff1844, #232323, #232323, #ff1844
