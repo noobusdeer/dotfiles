@@ -50,9 +50,9 @@ set $mod Mod4
 floating_modifier $mod
 
 # Terminal (mod+Enter)
-bindcode $mod+36 exec urxvt -e bash -c "tmux -u"
+bindcode $mod+36 exec urxvt
 # start dmenu (mod+x)
-bindcode $mod+53 exec dmenu_run -fn "$ft" -nb "$back" -nf "$white" -sb "$blue" -sf "$black"
+bindsym $mod+space exec rofi -show drun
 
 # My shortcuts
 bindsym $mod+Shift+t exec telegram-desktop
@@ -60,7 +60,7 @@ bindsym $mod+Shift+b exec firefox-nightly
 bindsym $mod+Shift+a exec atom-beta
 bindsym $mod+Shift+s exec skypeforlinux
 bindsym $mod+Shift+f exec thunar
-bindsym $mod+Shift+v exec /home/noobusdeer/.lock.sh
+bindsym $mod+Shift+v exec /home/noobusdeer/lock.sh
 bindsym $mod+Shift+c exec corebird
 bindsym $mod+p exec passmenu -fn "$ft" -nb "$back" -nf "$white" -sb "$blue" -sf "$black"
 
@@ -104,10 +104,10 @@ bindcode $mod+25 layout toggle split
 
 # toggle tiling / floating (mod+shitf+space)
 bindcode $mod+Shift+65 floating toggle
-bindcode $mod+Mod1+65 floating toggle
+# toogle ?bindcode $mod+Mod1+65 floating toggle
 
 # change focus between tiling / floating windows (mod+space)
-bindcode $mod+65 focus mode_toggle
+#bindcode $mod+65 focus mode_toggle
 
 # focus the parent container (mod+a)
 bindcode $mod+38 focus parent
