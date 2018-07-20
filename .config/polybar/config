@@ -8,7 +8,7 @@
 
 [bar/openbox-bar]
 inherit = bar/master
-
+override-redirect = false
 ; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
 ;monitor = eDP-1
 
@@ -16,6 +16,7 @@ tray-position = right
 tray-padding = 2
 ;tray-transparent = true
 ;tray-background = #0063ff
+;tray-detached = false
 
 modules-left   = workspaces 
 modules-center = 
@@ -106,8 +107,8 @@ line-size = 2
 
 font-0 = "DejaVuSans:pixelsize=9;2"
 font-1 = "Arimo Nerd Font:style=Regular:pixelsize=9;3"
-font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=9;3"
-font-3 = "Font Awesome 5 Brands:style=Regular:pixelsize=9;3"
+font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=5;3"
+font-3 = "Font Awesome 5 Brands:style=Regular:pixelsize=5;3"
 
 
 offset-x = 0
@@ -178,8 +179,8 @@ format = <label-state>
 ; active
 label-active = %icon% %{F#ffffff}%name%%{F-}
 label-active-padding = 1
-label-active-foreground = ${colors.active}
-label-active-underline = ${colors.active}
+label-active-foreground = ${colors.urgent}
+label-active-underline = ${colors.urgent}
 ; occupied
 label-occupied = %icon% %name%
 label-occupied-padding = 1
@@ -250,8 +251,8 @@ ramp-coreload-4 = ▆
 ramp-coreload-5 = ▇
 ramp-coreload-0-foreground = ${colors.foreground}
 ramp-coreload-1-foreground = ${colors.foreground}
-ramp-coreload-2-foreground = ${colors.yellow}
-ramp-coreload-3-foreground = ${colors.yellow}
+ramp-coreload-2-foreground = ${colors.foreground}
+ramp-coreload-3-foreground = ${colors.foreground}
 ramp-coreload-4-foreground = ${colors.urgent}
 ramp-coreload-5-foreground = ${colors.urgent}
 
@@ -288,7 +289,7 @@ label-padding = 1
 interval = 5
 time = %R
 label = %{A1:gsimplecal & disown:} %{A3:gsimplecal & disown:} %time%%{A} %{A}
-label-foreground = ${theme.brightmaia}
+label-foreground = ${colors.foreground}
 
 
 ;;;;;;;;;;;;;;;;;
@@ -314,7 +315,7 @@ format-warn = <label-warn>
 label-warn = " %{F#a3a8ae}%temperature%"
 label-warn-padding = 1
 label-warn-foreground = ${colors.urgent}
-label-foreground = ${theme.brightmaia}
+label-foreground = ${colors.foreground}
 
 
 ;;;;;;;;;;;;
@@ -324,7 +325,7 @@ label-foreground = ${theme.brightmaia}
 type = internal/volume
 master-mixer = Master
 format-volume-padding   = 0
-label-volume-foreground = ${theme.brightmaia}
+label-volume-foreground = ${colors.foreground}
 label-volume  =  %percentage%%
 format-volume = <label-volume>
 label-muted   = " muted "
