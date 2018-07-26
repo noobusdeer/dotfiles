@@ -1,4 +1,4 @@
-# My i3 dotfiles
+# My dotfiles
 
 ## Using:
 
