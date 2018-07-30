@@ -1,0 +1,15 @@
+[07/23/18, 10:43:00:848] info: ╔═════════════════════════════════════════════════════════════════════════════╗
+[07/23/18, 10:43:00:849] info: ║      Slack 3.2.1, linux 4.17.6-1-ARCH on x64 at 07/23/18, 10:43:00:844      ║
+[07/23/18, 10:43:00:849] info: ╚═════════════════════════════════════════════════════════════════════════════╝
+[07/23/18, 10:43:01:018] info: Initializing local storage instance at path: /home/noobusdeer/.config/Slack/local-settings.json
+[07/23/18, 10:43:02:074] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[07/23/18, 10:43:02:102] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[07/23/18, 10:43:02:671] info: Store: SET_NETWORK_STATUS online
+[07/23/18, 10:43:07:642] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T0489DFSR"
+}
+[07/23/18, 10:43:07:648] info: Store: MAIN_WINDOW_SHOWN
+[07/23/18, 10:43:07:664] info: Store: SET_FULL_SCREEN

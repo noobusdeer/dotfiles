@@ -1,0 +1,109 @@
+[07/18/18, 16:33:14:647] info: ╔═════════════════════════════════════════════════════════════════════════════╗
+[07/18/18, 16:33:14:648] info: ║      Slack 3.2.1, linux 4.17.5-1-ARCH on x64 at 07/18/18, 16:33:14:645      ║
+[07/18/18, 16:33:14:648] info: ╚═════════════════════════════════════════════════════════════════════════════╝
+[07/18/18, 16:33:14:869] info: Initializing local storage instance at path: /home/noobusdeer/.config/Slack/local-settings.json
+[07/18/18, 16:33:15:055] info: NetworkStatus: Waiting for network online…
+[07/18/18, 16:33:15:368] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[07/18/18, 16:33:15:374] info: Don't start background client because T0489DFSR is selected team
+[07/18/18, 16:33:15:386] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[07/18/18, 16:33:15:634] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[07/18/18, 16:33:16:041] info: Store: SET_NETWORK_STATUS online
+[07/18/18, 16:33:21:062] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T0489DFSR"
+}
+[07/18/18, 16:33:21:068] info: Store: MAIN_WINDOW_SHOWN
+[07/18/18, 16:33:21:101] info: Store: SET_FULL_SCREEN
+[07/18/18, 16:33:21:350] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T0489DFSR"
+}
+[07/18/18, 16:33:21:873] info: Store: SELECT_CHANNEL C048VVD23
+[07/18/18, 16:33:21:877] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US"
+}
+[07/18/18, 16:33:21:880] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[07/18/18, 16:33:22:085] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    385,
+    151
+  ],
+  "size": [
+    1152,
+    847
+  ]
+}
+[07/18/18, 16:33:22:805] info: Store: UPDATE_TEAM_ICONS
+{
+  "icons": {
+    "image_102": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2015-07-27/8279470755_c21a23877fd480328fb6_102.jpg",
+    "image_132": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2015-07-27/8279470755_c21a23877fd480328fb6_132.jpg",
+    "image_230": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2015-07-27/8279470755_c21a23877fd480328fb6_132.jpg",
+    "image_34": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2015-07-27/8279470755_c21a23877fd480328fb6_34.jpg",
+    "image_44": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2015-07-27/8279470755_c21a23877fd480328fb6_44.jpg",
+    "image_68": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2015-07-27/8279470755_c21a23877fd480328fb6_68.jpg",
+    "image_88": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2015-07-27/8279470755_c21a23877fd480328fb6_88.jpg",
+    "image_original": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2015-07-27/8279470755_c21a23877fd480328fb6_original.jpg"
+  },
+  "teamId": "T0489DFSR"
+}
+[07/18/18, 16:33:22:985] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T0489DFSR"
+}
+[07/18/18, 16:33:22:997] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T0489DFSR"
+}
+[07/18/18, 16:33:23:081] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T0489DFSR",
+  "theme": {
+    "active_item": "#6698C8",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#94E864",
+    "badge": "#78AF8F",
+    "column_bg": "#303E4D",
+    "hover_item": "#4A5664",
+    "menu_bg": "#2C3849",
+    "text_color": "#FFFFFF"
+  }
+}
+[07/18/18, 16:33:23:168] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T0489DFSR"
+}
+[07/18/18, 16:33:23:170] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T0489DFSR",
+  "token": "xoxs-⋯"
+}
+[07/18/18, 16:33:25:659] info: Store: SET_FULL_SCREEN
+[07/18/18, 16:33:26:655] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    384,
+    127
+  ],
+  "size": [
+    1152,
+    847
+  ]
+}

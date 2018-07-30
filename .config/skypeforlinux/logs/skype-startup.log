@@ -1,0 +1,18 @@
+** Message: 17:29:53.902: Remote error from secret service: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.secrets was not provided by any .service files
+** Message: 17:29:53.905: Remote error from secret service: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.secrets was not provided by any .service files
+** Message: 17:29:54.261: Remote error from secret service: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.secrets was not provided by any .service files
+** Message: 17:29:54.273: Remote error from secret service: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.secrets was not provided by any .service files
+** Message: 17:30:12.100: Remote error from secret service: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.secrets was not provided by any .service files
+** Message: 17:30:12.100: Remote error from secret service: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.secrets was not provided by any .service files
+ioctl failed for wlan0, errno = 19 (No such device)
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM mic_call
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM call
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM loopback_call
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM mic_call
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM call
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM loopback_call
+ioctl failed for wlan0, errno = 19 (No such device)
+** Message: 17:30:16.629: Remote error from secret service: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.secrets was not provided by any .service files
+** Message: 17:30:16.649: Remote error from secret service: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.secrets was not provided by any .service files
+Gtk-Message: 17:31:06.519: GtkDialog mapped without a transient parent. This is discouraged.
+Gtk-Message: 17:31:15.712: GtkDialog mapped without a transient parent. This is discouraged.

@@ -1,0 +1,63 @@
+Looking for git in: git
+Using git 2.18.0 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /home/noobusdeer/Documents/Cinder
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git show :git/midiTest/src/sampleApp.cpp
+> git show :apps/cinderSketches/src/SketchesApp.cpp
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /home/noobusdeer/Documents/Cinder/tools/TinderBox-Mac
+> git status -z -u
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /home/noobusdeer/Documents/Cinder/tools/TinderBox-Win
+> git status -z -u
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /home/noobusdeer/Documents/Cinder/include/boost
+> git status -z -u
+> git symbolic-ref --short HEAD
+fatal: ref HEAD is not a symbolic ref
+> git rev-parse HEAD
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git symbolic-ref --short HEAD
+fatal: ref HEAD is not a symbolic ref
+> git rev-parse HEAD
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git symbolic-ref --short HEAD
+fatal: ref HEAD is not a symbolic ref
+> git rev-parse HEAD
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :proj/cmake/configure.cmake
+> git check-ignore -z --stdin
+> git show :proj/cmake/modules/FindCLANG.cmake
+> git show :proj/cmake/libcinder_configure.cmake
+> git show :proj/cmake/configure.cmake
+> git show :proj/cmake/modules/cinderConfig.buildtree.cmake.in
+> git show :proj/cmake/modules/FindCLANG.cmake
+> git show :proj/cmake/libcinder_configure.cmake
+> git show :proj/cmake/utilities.cmake
+> git show :proj/cmake/libcinder_target.cmake
+> git show :proj/cmake/platform_linux.cmake
+> git show :proj/cmake/modules/cinderAndroidToolchain.cmake
+> git show :proj/cmake/modules/cinderMakeApp.cmake
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :blocks/MIDI2/proj/cmake/MIDI2Config.cmake
