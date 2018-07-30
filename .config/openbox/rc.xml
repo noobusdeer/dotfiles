@@ -343,10 +343,22 @@
         <command>/home/noobusdeer/lock.sh</command>
       </action>
     </keybind>
-    <keybind key="W-Right"><action name="MoveResizeTo"><x>-0</x></action></keybind>
-    <keybind key="W-Left"><action name="MoveResizeTo"><x>0</x></action></keybind>
-    <keybind key="W-Up">   <action name="ToggleMaximizeFull"/></keybind>
-    <keybind key="W-Down"> <action name="ToggleMaximizeVert"/></keybind>
+    <keybind key="W-Right">
+      <action name="MoveResizeTo">
+        <x>-0</x>
+      </action>
+    </keybind>
+    <keybind key="W-Left">
+      <action name="MoveResizeTo">
+        <x>0</x>
+      </action>
+    </keybind>
+    <keybind key="W-Up">
+      <action name="ToggleMaximizeFull"/>
+    </keybind>
+    <keybind key="W-Down">
+      <action name="ToggleMaximizeVert"/>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
@@ -740,5 +752,9 @@
 
   # end of the example
 -->
+    <!-- match all windows, and remove their decorations -->
+    <application class="*">
+      <decor>no</decor>
+    </application>
   </applications>
 </openbox_config>
