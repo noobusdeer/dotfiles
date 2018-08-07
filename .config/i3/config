@@ -50,7 +50,7 @@ set $mod Mod4
 floating_modifier $mod
 
 # Terminal (mod+Enter)
-bindcode $mod+36 exec urxvt
+bindcode $mod+36 exec kitty
 # start dmenu (mod+x)
 bindsym $mod+space exec rofi -show drun
 
@@ -184,7 +184,8 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # My soft autostart
 exec_always --no-startup-id feh --bg-scale /home/noobusdeer/Pictures/wall.jpg
-exec_always --no-startup-id compton -d
+#exec_always --no-startup-id compton -d
+exec_always --no-startup-id compton -CGb
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 exec_always --no-startup-id xrdb -I$HOME -merge $HOME/.Xresources
@@ -199,5 +200,4 @@ exec_always --no-startup-id export _JAVA_OPTIONS="‐Dawt.useSystemAAFontSetting
 exec_always --no-startup-id xinput set-button-map 10 1 2 3 4 5 2 7 8 9
 exec_always --no-startup-id devmon
 exec_always --no-startup-id twmnd
-exec_always --no-startup-id dropbox 
 exec_always --no-startup-id redshift redshift -l 55.75:37.61

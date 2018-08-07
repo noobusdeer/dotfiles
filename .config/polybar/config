@@ -18,9 +18,9 @@ tray-padding = 2
 ;tray-background = #0063ff
 ;tray-detached = false
 
-modules-left   = workspaces 
-modules-center = 
-modules-right  = volume keyboard temperature memory coreuse battery clock
+modules-left   = i3 
+modules-center = clock
+modules-right  = volume keyboard temperature memory coreuse battery 
 
 ;=====================================================
 ;     Colors & Settings
@@ -45,7 +45,7 @@ lightmaia = #16a085
 darkmaia = #0f6957
 lightgrey = #f3f3f3
 darkblue = #304048
-transparentgrey = #b01d1f21
+transparentgrey = #000000
 lightbrightblue = #00bcd4
 darkbrightblue = #006a78
 darkorange = #c85000
@@ -106,13 +106,9 @@ bottom = false
 line-size = 2
 
 font-0 = "DejaVuSans:pixelsize=9;2"
-
 font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=9;1"
 font-2 = "Font Awesome 5 Brands:style=Regular:pixelsize=8;1"
-
 font-3 = "Arimo Nerd Font:style=Regular:pixelsize=9;2"
-
-
 
 offset-x = 0
 offset-y = 0
@@ -135,28 +131,46 @@ scroll-down = pamixer -d 2
 ;     Modules
 ;=====================================================
 
-;;;;;;;;;;;;;;;
-;;  Manjaro  ;;
-;;;;;;;;;;;;;;;
-[module/manjaro]
-type = custom/script
-format = <label>
-label-padding = 2
-label-foreground = ${theme.brightmaia}
-label = 
-exec = echo ""
-click-left = rofi -show drun
-click-right = rofi -show drun
+[module/i3]
+type = internal/i3
+pin-workspaces = true
+strip-wsnumbers = true
+index-sort = true
+enable-click = false
+enable-scroll = false
+wrapping-scroll = false
+reverse-scroll = false
+format = <label-state> <label-mode>
 
-[module/music]
-type = custom/script
-interval = 1
+fuzzy-match = true
+ws-icon-0 = 1;α
+ws-icon-1 = 2;β
+ws-icon-2 = 3;γ
+ws-icon-3 = 4;δ
+ws-icon-4 = 5;ε
+ws-icon-default = ω
 
-label = %output:0:45:...%
-exec = ~/.config/polybar/scripts/poly_music.sh
+label-mode = %mode%
+label-mode-padding = 2
+label-mode-background = #e60053
 
+label-focused = %icon%
+label-focused-foreground = #ffffff
+label-focused-background = #3f3f3f
+label-focused-underline = #ffffff
+label-focused-padding = 4
 
+label-unfocused = %icon%
+label-unfocused-padding = 4
 
+label-visible = %icon%
+label-visible-underline = #555555
+label-visible-padding = 4
+
+label-urgent = %icon%
+label-urgent-foreground = #000000
+label-urgent-background = #bd2c40
+label-urgent-padding = 4
 
 ;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Openbox Workspaces ;;
@@ -200,19 +214,6 @@ label-empty-padding = 1
 label-empty-foreground = ${colors.foreground}
 
 ;;;;;;;;;;;;;
-;; BTC     ;;
-;;;;;;;;;;;;;
-[module/btc]
-type = custom/script
-exec = /home/ywft/.config/polybar/scripts/btc_price.sh
-interval = 600
-label = %{F#ff6905}%{F-} $%output%USD
-format-padding = 0
-label-foreground = ${theme.brightmaia}
-
-
-
-;;;;;;;;;;;;;
 ;; Network ;;
 ;;;;;;;;;;;;;
 [module/network]
@@ -222,7 +223,6 @@ click-left = networkmanager_dmenu &
 click-right = networkmanager_dmenu &
 label-padding = 1
 tail = true
-
 
 ;;;;;;;;;;;;;;;;;;;
 ;; Window Switch ;;
@@ -235,7 +235,6 @@ click-left = skippy-xd --activate-window-picker
 click-right = skippy-xd --activate-window-picker
 exec = echo "  "
 format = <label>
-
 
 ;;;;;;;;;
 ;; CPU ;;
@@ -259,7 +258,6 @@ ramp-coreload-3-foreground = ${colors.foreground}
 ramp-coreload-4-foreground = ${colors.urgent}
 ramp-coreload-5-foreground = ${colors.urgent}
 
-
 ;;;;;;;;;
 ;; MEM ;;
 ;;;;;;;;;
@@ -269,7 +267,6 @@ interval = 3
 format = <label>
 label-padding = 1
 label = %{A1:termite --exec=htop & disown:} %percentage_used%%%{A}
-
 
 ;;;;;;;;;
 ;; PKG ;;
@@ -281,7 +278,6 @@ exec-if = "ping -q -w 2 -c 1 176.34.135.167 > /dev/null"
 label = %{A1:pamac-manager & disown:} %{A3:termite --exec=pacui & disown:}%output%%{A} %{A}
 tail = true
 
-
 ;;;;;;;;;;;
 ;; Clock ;;
 ;;;;;;;;;;;
@@ -291,9 +287,8 @@ format = <label>
 label-padding = 1
 interval = 5
 time = %R
-label = %{A1:gsimplecal & disown:} %{A3:gsimplecal & disown:} %time%%{A} %{A}
+label = %{A1:gsimplecal & disown:} %{A3:gsimplecal & disown:} %time%%{A} %{A}
 label-foreground = ${colors.foreground}
-
 
 ;;;;;;;;;;;;;;;;;
 ;; TEMPERATURE ;;
@@ -305,7 +300,7 @@ thermal-zone = 0
 warn-temperature = 70
 format = <label>
 format-padding = 1
-label = %{A1:termite --exec='watch sensors' & disown:} %temperature%%{A}
+label = %{A1:termite --exec='watch sensors' & disown:} %temperature-c%%{A}
 ramp-0 = ""
 ramp-1 = ""
 ramp-2 = ""
@@ -315,11 +310,10 @@ ramp-1-foreground = ${colors.pink}
 ramp-2-foreground = ${colors.purple}
 ramp-3-foreground = ${colors.urgent}
 format-warn = <label-warn>
-label-warn = " %{F#a3a8ae}%temperature%"
+label-warn = " %{F#a3a8ae}%temperature-c%"
 label-warn-padding = 1
 label-warn-foreground = ${colors.urgent}
 label-foreground = ${colors.foreground}
-
 
 ;;;;;;;;;;;;
 ;; Volume ;;
@@ -341,9 +335,6 @@ ramp-volume-0-foreground = ${colors.foreground}
 ramp-volume-1-foreground = ${colors.blue}
 ramp-volume-2-foreground = ${colors.orange}
 ramp-volume-3-foreground = ${colors.urgent}
-
-
-
 
 ;;;;;;;;;;;;;
 ;; BATTERY ;;
@@ -381,9 +372,6 @@ label-charging-foreground = ${theme.lightgrey}
 label-discharging-foreground = ${theme.lightgrey}
 label-full-foreground = ${theme.lightgrey}
 label-charging = %percentage%% 
-
-
-
 
 ;;;;;;;;;;
 ;; MENU ;;
@@ -433,7 +421,6 @@ menu-3-2-exec = systemctl reboot
 menu-3-3 = "      |"
 menu-3-3-exec = systemctl poweroff
 
-
 ;;;;;;;;;;;;;;;;;;;;
 ;; Compton Toggle ;;
 ;;;;;;;;;;;;;;;;;;;;
@@ -444,7 +431,6 @@ label = %output%
 click-left = toggle.sh -c -tg &
 exec = toggle.sh -c
 format = <label>
-
 
 ;;;;;;;;;;;;;;;
 ;; KEYBOARD  ;;
@@ -457,7 +443,6 @@ format = <label-layout>
 format-padding = 1
 label-layout = %{A1:lxinput & disown:} %{A3:lxinput & disown:} %layout%%{A} %{A}
 
-
 ;;;;;;;;;;;;;;
 ;; ETHERNET ;;
 ;;;;;;;;;;;;;;
@@ -469,7 +454,6 @@ format-disconnected = <label-disconnected>
 label-connected =  %local_ip%
 format-connected-foreground = ${colors.foreground}
 
-
 ;;;;;;;;;;;;;;
 ;; REDSHIFT ;;
 ;;;;;;;;;;;;;;
@@ -479,7 +463,6 @@ tail = true
 exec = toggle.sh -r
 label = %output%
 click-left = toggle.sh -r -tg &
-
 
 ;;;;;;;;;;;;;;;;
 ;; FILESYSTEM ;;
@@ -493,8 +476,6 @@ interval = 1200
 fixed-values = false
 spacing = 2
 label-mounted-foreground = ${theme.brightmaia}
-
-
 
 ;;;;;;;;;
 ;; MPD ;;
@@ -526,7 +507,6 @@ bar-progress-fill-foreground = #bb
 bar-progress-empty-foreground = #44
 bar-progress-indicator-foreground = #A85659
 
-
 ;;;;;;;;;;
 ;; WIFI ;;
 ;;;;;;;;;;
@@ -555,7 +535,6 @@ animation-packetloss-0-foreground = #ffa64c
 animation-packetloss-1-foreground = #000000
 animation-packetloss-framerate = 500
 label-connected-foreground = ${theme.brightmaia}
-
 
 ;;;;;;;;;;;;;;;;
 ;; VOLUME BAR ;;
