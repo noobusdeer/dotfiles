@@ -1,4 +1,0 @@
-[2018-07-27 20:00:13.772] [renderer8] [info] no standard startup: not just one window
-[2018-07-27 20:00:16.621] [renderer8] [error] An unknown error occurred. Please consult the log for more details.
-[2018-07-27 20:00:19.293] [renderer8] [error] Error: Inotify limit reached (ENOSPC)
-[2018-07-27 20:01:13.226] [renderer8] [error] An unknown error occurred. Please consult the log for more details.

@@ -1,2 +1,0 @@
-[2018-07-28 00:31:42.627] [renderer1] [info] no standard startup: not the explorer viewlet
-[2018-07-28 00:31:45.943] [renderer1] [error] Error: Inotify limit reached (ENOSPC)

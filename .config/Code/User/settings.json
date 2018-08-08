@@ -1,7 +1,0 @@
-{
-    "workbench.colorTheme": "Ayu Dark",
-    "workbench.iconTheme": "ayu",
-    "rust-client.channel": "stable",
-    "editor.fontFamily": "PragmataPro Mono",
-    "editor.fontLigatures": true
-}
