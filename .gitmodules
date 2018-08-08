@@ -1,0 +1,3 @@
+[submodule "/home/noobusdeer/.emacs.d"]
+	path = /home/noobusdeer/.emacs.d
+	url = https://github.com/syl20bnr/spacemacs
